@@ -5,7 +5,7 @@ const ita = document.getElementById('instagram');
 const socials = [
   {
     social: fb,
-    link: 'facebook.com/van.ha.3112/',
+    link: 'https://facebook.com/van.ha.3112/',
   },
   {
     social: gh,
@@ -13,7 +13,7 @@ const socials = [
   },
   {
     social: ita,
-    link: 'instagram.com/hafmax05/',
+    link: 'https://instagram.com/hafmax05/',
   },
 ];
 
@@ -24,5 +24,5 @@ socials.forEach((element) => {
 });
 
 function view(el) {
-  window.location.assign(el.link);
+  window.open(el.link, '_blank');
 }
