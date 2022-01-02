@@ -1,0 +1,21 @@
+:root {
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $mainBg;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  @include flexCenter;
+  gap: 60px;
+  flex-wrap: wrap;
+}

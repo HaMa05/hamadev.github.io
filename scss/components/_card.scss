@@ -1,0 +1,93 @@
+.card {
+  max-width: 350px;
+  padding: 25px;
+  background-color: $cardBg;
+  border-radius: 15px;
+  color: $whiteBG;
+
+  &-text {
+    color: $softBlue;
+
+    &--hover {
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $cyan;
+      }
+    }
+  }
+
+  &-img {
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+
+    &--overlay {
+      opacity: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.5s;
+    }
+
+    &:hover {
+      .card-img--overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-title {
+    margin: 25px 0;
+    font-weight: $fontWeight-400;
+    font-size: 25px;
+  }
+
+  &-icon {
+    margin-right: 5px;
+  }
+
+  &-user {
+    @include flexCenter(space-between);
+
+    &--avatar {
+      max-width: 34px;
+      max-height: 34px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1.2px solid $whiteBG;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.facebook {
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($facebookBG, 0.5);
+  }
+}
+
+.github {
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($githubBg, 0.5);
+  }
+}
+
+.instagram {
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  &:hover {
+    background-color: rgba($instaBG, 0.5);
+  }
+}
