@@ -24,5 +24,5 @@ socials.forEach((element) => {
 });
 
 function view(el) {
-  window.open(el.link);
+  window.location.assign(el.link);
 }
