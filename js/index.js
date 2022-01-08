@@ -13,7 +13,7 @@ const socials = [
   },
   {
     social: ita,
-    link: 'https://instagram.com/hafmax05/',
+    link: 'https://instagram.com/hafmaxdev/',
   },
 ];
 
